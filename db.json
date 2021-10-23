@@ -1,0 +1,28 @@
+{
+  "consoles": [
+    {
+      "id": 1,
+      "consoleName": "PC",
+      "games" : [
+        {
+          "seriesName" : "The Elder Scrolls",
+          "name": "Skyrim",
+          "cover": "https://upload.wikimedia.org/wikipedia/en/1/15/The_Elder_Scrolls_V_Skyrim_cover.png",
+          "developer": "Bethesda Game Studios"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "consoleName": "PS5",
+      "games" : [
+        {
+          "seriesName" : "",
+          "name": "",
+          "cover": "",
+          "developer": ""
+        }
+      ]
+    }
+  ]
+}
