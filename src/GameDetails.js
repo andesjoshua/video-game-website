@@ -1,7 +1,6 @@
 
-const GameDetails = ({details: {genre, platform, publisher, release_date, short_description}, details}) => {
+const GameDetails = ({details: {genre, platform, publisher, release_date, short_description}}) => {
 
-   
     return (
         <div>
             <li>Genre: {genre}</li>
