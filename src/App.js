@@ -4,20 +4,22 @@ import NavBar from './NavBar'
 import {useEffect, useState} from 'react';
 
 function App() {
-const [gameData, setGameData] = useState()
+const [gameData, setGameData] = useState([])
 
-const API = 'https://api.rawg.io/api/platforms?key=34a81b8193a846b5aba89c9356f750ec'
+const API = 'https://free-to-play-games-database.p.rapidapi.com/api/games'
+
 
 useEffect(() => {
-  async function getData(){
-    const request = fetch(API)
-    const response = await request;
-    const data = await response.json()
-    setGameData(data)
-  }
-  getData()
-},[]) 
-   if(gameData === undefined) return null
+  fetch(API, {
+	"method": "GET",
+	"headers": {
+		"x-rapidapi-host": "free-to-play-games-database.p.rapidapi.com",
+		"x-rapidapi-key": "e33f7d1317mshc41b79d9f97eb25p1f7246jsn81ae77998367",
+	}
+})
+.then(response => response.json())
+.then(data => setGameData(data))
+},[])
 
   return (
     <div className="App" >

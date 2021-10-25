@@ -1,10 +1,9 @@
-import SystemCard from './SystemCard'
+import GameCard from './GameCard'
 
-const GameContainer = ({gameData: {results}}) => {
-    console.log(results)
+const GameContainer = ({gameData}) => {
     return (
         <div>
-           <h2>Consoles: {results.map(system => <SystemCard system={system}/>)}</h2>
+           <h2>Games {gameData.map(game => <GameCard game={game}/>)}</h2>
         </div>
     )
 }
