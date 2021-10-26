@@ -5,9 +5,12 @@ import NavBar from './NavBar'
 import {useEffect, useState} from 'react';
 import {Route, Switch} from 'react-router-dom'
 
+// hello
+
 function App() {
 const [gameData, setGameData] = useState([])
 const [formInput, setFormInput] = useState('')
+const [filterSearch, setFilterSearch] = useState(gameData)
 
 const API = 'http://localhost:3000/games'
 
@@ -19,16 +22,23 @@ useEffect(() => {
 
 
 
+const handleSearch = (e) => {
+  const filtered = gameData.filter((game) => {
+    return game.title.includes(e.target.value)
+  })
+  setFilterSearch(filtered)
+}
+
   return (
     <div className="App" >
       {/* <Switch> */}
-        <Header />
         <NavBar />
         <Route  path='/new'>
-          <AddGameForm setInput={setFormInput} input={formInput}/>
+        <AddGameForm setInput={setFormInput} input={formInput}/>
         </Route> 
-        <GameContainer gameData={gameData}/>
       {/* </Switch> */}
+      <Header handleSearch={handleSearch} />
+      <GameContainer gameData={filterSearch}/>
     </div>
   );
 }
