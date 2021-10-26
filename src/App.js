@@ -20,8 +20,6 @@ useEffect(() => {
   .then(data => setGameData(data))
   },[])
 
-
-
 const handleSearch = (e) => {
   const filtered = gameData.filter((game) => {
     return game.title.includes(e.target.value)
