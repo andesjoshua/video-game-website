@@ -2,7 +2,7 @@
 const GameDetails = ({details: {genre, platform, publisher, release_date, short_description}}) => {
 
     return (
-        <div>
+        <div style={{fontSize: 25}}>
             <li>Genre: {genre}</li>
             <li>Platform: {platform}</li>
             <li>Publisher: {publisher}</li>
