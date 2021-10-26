@@ -6,8 +6,8 @@ const GameCard = ({game}) => {
     const [detailsVisible, setDetailsVisible] = useState(false)
 
     
-    const displayDetails = () => {
-        setDetailsVisible(!detailsVisible)
+    const linkToDetails = () => {
+        <link to='./details'></link>
     }
 
     return (
@@ -17,11 +17,9 @@ const GameCard = ({game}) => {
             <h3 >{game.title}</h3>
             </div>
             <div className='image-card'>
-            <img onClick={displayDetails} alt={game.title} src={game.thumbnail}/>
+            <img onClick={linkToDetails} alt={game.title} src={game.thumbnail}/>
             </div>
-            {detailsVisible ?
-            <GameDetails details={game}/>
-            : null}
+            
         </div>
         
     )

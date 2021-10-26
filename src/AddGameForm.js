@@ -1,4 +1,6 @@
 import { useState } from "react"
+import { NavLink } from "react-router-dom"
+import { useHistory } from "react-router-dom"
 
 const AddGameForm = ({addGame}) => {
 
@@ -13,8 +15,11 @@ const AddGameForm = ({addGame}) => {
         thumbnail: ""
     })
 
+    const history = useHistory();
+
     const handleSubmit = (event) => {
        event.preventDefault()
+       history.push('/games')
        
        const newGame = {
             title: formData.title,
@@ -45,6 +50,7 @@ const AddGameForm = ({addGame}) => {
 
     return (
         <div>
+            <NavLink to='/games'>Main Page</NavLink>
             <h2>Add your favorite game to our database!</h2> 
             <form onSubmit={handleSubmit}>
                 <input name='title' placeholder='title' value={formData.title} onChange={handleChange}/>

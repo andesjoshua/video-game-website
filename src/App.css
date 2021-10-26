@@ -1,7 +1,14 @@
 .cardStyle {
-  display: inline-block;
-  margin: 20px;
+  font-size: small;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 img {
-  width: 250px;
+  margin: 8px;
+   
+  height: 100px; 
 }
+
+
