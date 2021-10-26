@@ -8,6 +8,7 @@ import {useEffect, useState} from 'react';
 
 function App() {
 const [gameData, setGameData] = useState([])
+const [filterSearch, setFilterSearch] = useState(gameData)
 
 const API = 'http://localhost:3001/games'
 
@@ -29,11 +30,18 @@ useEffect(() => {
 // .then(data => setGameData(data))
 // },[])
 
+const handleSearch = (e) => {
+  const filtered = gameData.filter((game) => {
+    return game.title.includes(e.target.value)
+  })
+  setFilterSearch(filtered)
+}
+
   return (
     <div className="App" >
-      <Header />
+      <Header handleSearch={handleSearch} />
       <AddGameForm />
-      <GameContainer gameData={gameData}/>
+      <GameContainer gameData={filterSearch}/>
     </div>
   );
 }
