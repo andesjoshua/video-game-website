@@ -4938,6 +4938,94 @@
       "short_description": "",
       "thumbnail": "",
       "id": 532
+    },
+    {
+      "title": "Dokkan Battle",
+      "game_url": "https://dbz-dokkan.bngames.net/en/",
+      "genre": "Mobile",
+      "platform": "Android, IOS",
+      "developer": "Bandai Namco",
+      "release_date": "2014",
+      "short_description": "Stuff",
+      "thumbnail": "https://static-cdn.jtvnw.net/ttv-boxart/DRAGON%20BALL%20Z%20DOKKAN%20BATTLE.jpg",
+      "id": 533
+    },
+    {
+      "title": "",
+      "game_url": "",
+      "genre": "",
+      "platform": "",
+      "developer": "",
+      "release_date": "",
+      "short_description": "",
+      "thumbnail": "",
+      "id": 534
+    },
+    {
+      "title": "",
+      "game_url": "",
+      "genre": "",
+      "platform": "",
+      "developer": "",
+      "release_date": "",
+      "short_description": "",
+      "thumbnail": "",
+      "id": 535
+    },
+    {
+      "title": "",
+      "game_url": "",
+      "genre": "",
+      "platform": "",
+      "developer": "",
+      "release_date": "",
+      "short_description": "",
+      "thumbnail": "",
+      "id": 536
+    },
+    {
+      "title": "Rocket League",
+      "game_url": "asdawd",
+      "genre": "asdasd",
+      "platform": "dsds",
+      "developer": "dsd",
+      "release_date": "sdsd",
+      "short_description": "sds",
+      "thumbnail": "https://www.google.com/imgres?imgurl=https%3A%2F%2Fcdn1.epicgames.com%2FsalesEvent%2FsalesEvent%2FEGS_LandscapeProductImage_2560x1440_2560x1440-5962106d6d94a5fd6db07bb922166f0a&imgrefurl=https%3A%2F%2Fwww.epicgames.com%2Fstore%2Fen-US%2Fp%2Frocket-league&tbnid=uFcLkpRurLWKHM&vet=12ahUKEwjAwbeigunzAhXOqXIEHfTDCKsQMygAegUIARDQAQ..i&docid=eBfWPNywRb82JM&w=2560&h=1440&itg=1&q=rocket%20league&ved=2ahUKEwjAwbeigunzAhXOqXIEHfTDCKsQMygAegUIARDQAQ",
+      "id": 537
+    },
+    {
+      "title": "",
+      "game_url": "",
+      "genre": "",
+      "platform": "",
+      "developer": "",
+      "release_date": "",
+      "short_description": "",
+      "thumbnail": "",
+      "id": 538
+    },
+    {
+      "title": "",
+      "game_url": "",
+      "genre": "",
+      "platform": "",
+      "developer": "",
+      "release_date": "",
+      "short_description": "",
+      "thumbnail": "",
+      "id": 539
+    },
+    {
+      "title": "",
+      "game_url": "",
+      "genre": "",
+      "platform": "",
+      "developer": "",
+      "release_date": "",
+      "short_description": "",
+      "thumbnail": "",
+      "id": 540
     }
   ]
 }

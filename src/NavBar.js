@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import {games} from './db.json'
+import {NavLink} from 'react-router-dom'
 
 
 
@@ -13,7 +14,9 @@ const NavBar = ({setGameData}) => {
     return (
         <div>
            
-            <Link exact to='/new'>Add Your Own Game! </Link>
+            <NavLink to='/new'>Add Your Own Game! </NavLink>
+            <NavLink to='/games'>Main Page </NavLink>
+            
             <button onClick={() => setGameData(games)} >All Games</button>
             <button onClick={() => handleClick('Shooter')} >Shooter</button>
             <button onClick={() => handleClick('Sports')} >Sports</button>

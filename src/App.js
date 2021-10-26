@@ -4,13 +4,14 @@ import AddGameForm from './AddGameForm';
 import NavBar from './NavBar'
 import {useEffect, useState} from 'react';
 import {Route, Switch} from 'react-router-dom'
+import {useHistory} from 'react-router-dom'
 
 // hello
 
 function App() {
 const [gameData, setGameData] = useState([])
-const [formInput, setFormInput] = useState('')
 const [filterSearch, setFilterSearch] = useState(gameData)
+const hisotry = useHistory();
 
 const API = 'http://localhost:3000/games'
 
@@ -38,10 +39,21 @@ const handleSearch = (e) => {
   return (
     <div className="App" >
       {/* <Switch> */}
-      <NavBar gameData={gameData} setGameData={setGameData}/>
-      <AddGameForm addGame={addGame}/>
-      <Header handleSearch={handleSearch} />
-      <GameContainer gameData={filterSearch}/>
+
+        <Route exact path='/games/nav'>
+        <NavBar gameData={gameData} setGameData={setGameData}/>
+        </Route>
+
+          <Route exact path='/new'>
+            <AddGameForm addGame={addGame}/>
+          </Route>
+
+        <Header handleSearch={handleSearch} />
+
+        <Route exact path='/games'>
+          <GameContainer gameData={filterSearch}/>
+        </Route>
+      {/* </Switch> */}
     </div>
   );
 }
