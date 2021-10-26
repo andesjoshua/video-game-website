@@ -12,7 +12,7 @@ const [gameData, setGameData] = useState([])
 const [formInput, setFormInput] = useState('')
 const [filterSearch, setFilterSearch] = useState(gameData)
 
-const API = 'http://localhost:3001/games'
+const API = 'http://localhost:3000/games'
 
 useEffect(() => {
   fetch(API) 
@@ -24,6 +24,10 @@ useEffect(() => {
 setFilterSearch(gameData)
 },[gameData])
 
+const addGame = (newGame) => {
+  setGameData([newGame, ...gameData])
+}
+
 const handleSearch = (e) => {
   const filtered = gameData.filter((game) => {
     return game.title.includes(e.target.value)
@@ -34,11 +38,8 @@ const handleSearch = (e) => {
   return (
     <div className="App" >
       {/* <Switch> */}
-        <NavBar gameData={gameData} setGameData={setGameData}/>
-        <Route  path='/new'>
-        <AddGameForm setInput={setFormInput} input={formInput}/>
-        </Route> 
-      {/* </Switch> */}
+      <NavBar gameData={gameData} setGameData={setGameData}/>
+      <AddGameForm addGame={addGame}/>
       <Header handleSearch={handleSearch} />
       <GameContainer gameData={filterSearch}/>
     </div>
