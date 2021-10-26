@@ -40,6 +40,7 @@ const handleSearch = (e) => {
   return (
     <div className="App" >
       <Header handleSearch={handleSearch} />
+      <NavBar />
       <AddGameForm />
       <GameContainer gameData={filterSearch}/>
     </div>

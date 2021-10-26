@@ -1,7 +1,15 @@
 
 const NavBar = () => {
     return (
-        <div></div>
+        <div>
+            <button>Shooting</button>
+            <button>Sports</button>
+            <button></button>
+            <button></button>
+            <button></button>
+            <button></button>
+            <button></button>
+        </div>
     )
 }
 
