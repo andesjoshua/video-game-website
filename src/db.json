@@ -4746,36 +4746,6 @@
       "freetogame_profile_url": "https://www.freetogame.com/skydome"
     },
     {
-      "title": "",
-      "game_url": "",
-      "genre": "",
-      "platform": "",
-      "developer": "",
-      "release_date": "",
-      "short_description": "",
-      "id": 515
-    },
-    {
-      "title": "",
-      "game_url": "",
-      "genre": "",
-      "platform": "",
-      "developer": "",
-      "release_date": "",
-      "short_description": "",
-      "id": 516
-    },
-    {
-      "title": "Skyrim",
-      "game_url": "www.skyrim.com",
-      "genre": "RPG",
-      "platform": "PC",
-      "developer": "Bethesda Game Studios",
-      "release_date": "11-11-11",
-      "short_description": "Great RPG with dark ages theme",
-      "id": 517
-    },
-    {
       "title": "Oblivion",
       "game_url": "https://elderscrolls.bethesda.net/en/oblivion",
       "genre": "RPG",
@@ -4917,72 +4887,7 @@
       "short_description": "",
       "thumbnail": "",
       "id": 531
-    },
-    {
-      "title": "sd",
-      "game_url": "",
-      "genre": "",
-      "platform": "",
-      "developer": "",
-      "release_date": "",
-      "short_description": "",
-      "thumbnail": "",
-      "id": 532
-    },
-    {
-      "title": "Dokkan Battle",
-      "game_url": "https://dbz-dokkan.bngames.net/en/",
-      "genre": "Mobile",
-      "platform": "Android, IOS",
-      "developer": "Bandai Namco",
-      "release_date": "2014",
-      "short_description": "Stuff",
-      "thumbnail": "https://static-cdn.jtvnw.net/ttv-boxart/DRAGON%20BALL%20Z%20DOKKAN%20BATTLE.jpg",
-      "id": 533
-    },
-    {
-      "title": "",
-      "game_url": "",
-      "genre": "",
-      "platform": "",
-      "developer": "",
-      "release_date": "",
-      "short_description": "",
-      "thumbnail": "",
-      "id": 534
-    },
-    {
-      "title": "",
-      "game_url": "",
-      "genre": "",
-      "platform": "",
-      "developer": "",
-      "release_date": "",
-      "short_description": "",
-      "thumbnail": "",
-      "id": 535
-    },
-    {
-      "title": "",
-      "game_url": "",
-      "genre": "",
-      "platform": "",
-      "developer": "",
-      "release_date": "",
-      "short_description": "",
-      "thumbnail": "",
-      "id": 536
-    },
-    {
-      "title": "",
-      "game_url": "",
-      "genre": "",
-      "platform": "",
-      "developer": "",
-      "release_date": "",
-      "short_description": "",
-      "thumbnail": "",
-      "id": 538
     }
+    
   ]
 }

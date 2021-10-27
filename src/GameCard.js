@@ -30,6 +30,13 @@ const GameCard = ({game}) => {
 export default GameCard
 
 const CardContainer = styled.div `
+    box-shadow: 4px 4px 8px 0px rgba(0,0,0,0.2);
+    margin: 10px;
+    cursor: pointer;
+        :hover{
+            z-index: 1;
+            transform: scale(1.10);
+        }
     h3 {
         /* font-size: 20px; */
         /* margin-top: auto; */
