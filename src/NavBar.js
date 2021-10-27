@@ -1,6 +1,6 @@
-import { Link } from "react-router-dom";
 import {games} from './db.json'
 import {NavLink} from 'react-router-dom'
+import styled from 'styled-components'
 
 
 
@@ -12,10 +12,7 @@ const NavBar = ({setGameData}) => {
     }
 
     return (
-        <div>
-           
-            <NavLink to='/new'>Add Your Own Game! </NavLink>
-            <NavLink to='/games'>Main Page </NavLink>
+        <NavContainer>
             
             <button onClick={() => setGameData(games)} >All Games</button>
             <button onClick={() => handleClick('Shooter')} >Shooter</button>
@@ -25,8 +22,41 @@ const NavBar = ({setGameData}) => {
             <button onClick={() => handleClick('Social')}>Social</button>
             <button onClick={() => handleClick('Fantasy')}>Fantasy</button>
             <button onClick={() => handleClick('Fighting')}>Fighting</button>
-        </div>
+            <button><NavLink to='/about'>About</NavLink></button>
+            <button><NavLink to='/new'>Add Your Game</NavLink></button>
+            
+            
+        </NavContainer>
     )
 }
 
 export default NavBar
+
+const NavContainer = styled.div `
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto;
+    button {
+        color: white;
+        padding: 10px 20px;
+        background-color: blueviolet;
+        border-radius: 50px;
+        margin: 5px;
+        display: inline-block;
+        cursor: pointer;
+        font-size: 15px;
+        :hover{
+            z-index: 1;
+            transform: scale(1.25);
+        }
+        a{
+            text-decoration: none;
+            color: white
+        }
+    }
+    
+        
+`

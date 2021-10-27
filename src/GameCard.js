@@ -1,6 +1,7 @@
 import GameDetails from "./GameDetails"
 import { useState } from "react"
 import {Route} from 'react-router-dom'
+import styled from "styled-components"
 
 const GameCard = ({game}) => {
     const [detailsVisible, setDetailsVisible] = useState(false)
@@ -12,7 +13,7 @@ const GameCard = ({game}) => {
 
     return (
         
-        <div className='game-card'>
+        <CardContainer className='game-card'>
             <div className='game-title'>
             <h3 >{game.title}</h3>
             </div>
@@ -20,10 +21,17 @@ const GameCard = ({game}) => {
             <img onClick={linkToDetails} alt={game.title} src={game.thumbnail}/>
             </div>
             
-        </div>
+        </CardContainer>
         
     )
 }
 
 
 export default GameCard
+
+const CardContainer = styled.div `
+    h3 {
+        /* font-size: 20px; */
+        /* margin-top: auto; */
+    }
+`
