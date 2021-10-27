@@ -3,7 +3,7 @@ import Header from './Header'
 import AddGameForm from './AddGameForm';
 import NavBar from './NavBar'
 import {useEffect, useState} from 'react';
-import {Route, Switch} from 'react-router-dom'
+import {Route} from 'react-router-dom'
 import About from './About';
 
 

@@ -22,8 +22,8 @@ const NavBar = ({setGameData}) => {
             <button onClick={() => handleClick('Social')}>Social</button>
             <button onClick={() => handleClick('Fantasy')}>Fantasy</button>
             <button onClick={() => handleClick('Fighting')}>Fighting</button>
-            <button><NavLink to='/about'>About</NavLink></button>
-            <button><NavLink to='/new'>Add Your Game</NavLink></button>
+            <button className='about'><NavLink to='/about'>About</NavLink></button>
+            <button className='new-game'><NavLink to='/new'>Add Your Game</NavLink></button>
             
             
         </NavContainer>
@@ -39,6 +39,12 @@ const NavContainer = styled.div `
     justify-content: center;
     align-items: center;
     margin: 10px auto;
+    .about{
+        background-color: #17405C; 
+    }
+    .new-game{
+        background-color: #17405C;
+    }
     button {
         color: white;
         padding: 10px 20px;
@@ -54,8 +60,9 @@ const NavContainer = styled.div `
         }
         a{
             text-decoration: none;
-            color: white
+            color: white;
         }
+   
     }
     
         
