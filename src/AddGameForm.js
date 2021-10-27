@@ -1,6 +1,7 @@
 import { useState } from "react"
 import { NavLink } from "react-router-dom"
 import { useHistory } from "react-router-dom"
+import styled from "styled-components"
 
 const AddGameForm = ({addGame}) => {
 
@@ -19,7 +20,7 @@ const AddGameForm = ({addGame}) => {
 
     const handleSubmit = (event) => {
        event.preventDefault()
-       history.push('/games')
+       history.push('/')
        
        const newGame = {
             title: formData.title,
@@ -49,8 +50,8 @@ const AddGameForm = ({addGame}) => {
     }
 
     return (
-        <div>
-            <NavLink to='/games'>Main Page</NavLink>
+        <FormContainer>
+            <button><NavLink to='/'>Home</NavLink></button>
             <h2>Add your favorite game to our database!</h2> 
             <form onSubmit={handleSubmit}>
                 <input name='title' placeholder='title' value={formData.title} onChange={handleChange}/>
@@ -65,8 +66,30 @@ const AddGameForm = ({addGame}) => {
 
                 <input type='submit' onSubmit={handleSubmit}/>
             </form>
-        </div>
+        </FormContainer>
     )
 }
 
 export default AddGameForm
+
+const FormContainer = styled.div `
+    
+    button {
+       color: white;
+        padding: 10px 20px;
+        background-color: blueviolet;
+        border-radius: 50px;
+        margin: 5px;
+        display: inline-block;
+        cursor: pointer;
+        font-size: 15px;
+        :hover{
+            z-index: 1;
+            transform: scale(1.25); 
+        }
+            a{
+            text-decoration: none;
+            color: white
+        }
+    }
+`

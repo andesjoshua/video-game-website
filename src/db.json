@@ -4776,16 +4776,6 @@
       "id": 517
     },
     {
-      "title": "Skyrim",
-      "game_url": "www.skyrim.com",
-      "genre": "RPG",
-      "platform": "",
-      "developer": "",
-      "release_date": "",
-      "short_description": "",
-      "id": 518
-    },
-    {
       "title": "Oblivion",
       "game_url": "https://elderscrolls.bethesda.net/en/oblivion",
       "genre": "RPG",
@@ -4984,17 +4974,6 @@
       "id": 536
     },
     {
-      "title": "Rocket League",
-      "game_url": "asdawd",
-      "genre": "asdasd",
-      "platform": "dsds",
-      "developer": "dsd",
-      "release_date": "sdsd",
-      "short_description": "sds",
-      "thumbnail": "https://www.google.com/imgres?imgurl=https%3A%2F%2Fcdn1.epicgames.com%2FsalesEvent%2FsalesEvent%2FEGS_LandscapeProductImage_2560x1440_2560x1440-5962106d6d94a5fd6db07bb922166f0a&imgrefurl=https%3A%2F%2Fwww.epicgames.com%2Fstore%2Fen-US%2Fp%2Frocket-league&tbnid=uFcLkpRurLWKHM&vet=12ahUKEwjAwbeigunzAhXOqXIEHfTDCKsQMygAegUIARDQAQ..i&docid=eBfWPNywRb82JM&w=2560&h=1440&itg=1&q=rocket%20league&ved=2ahUKEwjAwbeigunzAhXOqXIEHfTDCKsQMygAegUIARDQAQ",
-      "id": 537
-    },
-    {
       "title": "",
       "game_url": "",
       "genre": "",
@@ -5004,28 +4983,6 @@
       "short_description": "",
       "thumbnail": "",
       "id": 538
-    },
-    {
-      "title": "",
-      "game_url": "",
-      "genre": "",
-      "platform": "",
-      "developer": "",
-      "release_date": "",
-      "short_description": "",
-      "thumbnail": "",
-      "id": 539
-    },
-    {
-      "title": "",
-      "game_url": "",
-      "genre": "",
-      "platform": "",
-      "developer": "",
-      "release_date": "",
-      "short_description": "",
-      "thumbnail": "",
-      "id": 540
     }
   ]
 }
