@@ -11,7 +11,7 @@ const GameCard = ({game}) => {
             <div className='game-title'>
             </div>
             <div className='image-card'>
-            <a href={game.game_url}>
+            <a href={game.game_url} target='_blank'>
                 <img alt={game.title} src={game.thumbnail}/>
             </a>
             <GameDetails details={game}/>
