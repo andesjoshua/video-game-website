@@ -1,4 +1,4 @@
-import {games} from './db.json'
+import {games} from '../db.json'
 import {NavLink} from 'react-router-dom'
 import styled from 'styled-components'
 

@@ -1,5 +1,5 @@
-
 import styled from "styled-components"
+
 const GameDetails = ({details: {genre, platform, publisher, release_date, short_description}}) => {
 
     return (
@@ -16,8 +16,8 @@ const GameDetails = ({details: {genre, platform, publisher, release_date, short_
 export default GameDetails
 
 const DetailsStyle = styled.div`
- *{
+    *{
+     margin: 25px;
      margin-top: 20px
-    //  width: 55%
  }
 `
