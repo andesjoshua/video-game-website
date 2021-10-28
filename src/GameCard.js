@@ -4,21 +4,17 @@ import {Route} from 'react-router-dom'
 import styled from "styled-components"
 
 const GameCard = ({game}) => {
-    const [detailsVisible, setDetailsVisible] = useState(false)
-
-    
-    const linkToDetails = () => {
-        <link to='./details'></link>
-    }
 
     return (
         
         <CardContainer className='game-card'>
             <div className='game-title'>
-            <h3 >{game.title}</h3>
             </div>
             <div className='image-card'>
-            <img onClick={linkToDetails} alt={game.title} src={game.thumbnail}/>
+            <a href={game.game_url}>
+                <img alt={game.title} src={game.thumbnail}/>
+            </a>
+            <GameDetails details={game}/>
             </div>
             
         </CardContainer>
@@ -31,14 +27,16 @@ export default GameCard
 
 const CardContainer = styled.div `
     box-shadow: 4px 4px 8px 0px rgba(0,0,0,0.2);
-    margin: 10px;
+    
     cursor: pointer;
+
         :hover{
-            z-index: 1;
-            transform: scale(1.10);
+            z-index: .5;
+            transform: scale(1.01);
         }
-    h3 {
-        /* font-size: 20px; */
-        /* margin-top: auto; */
+       
+    * {
+        display:flex;
+        // width: %
     }
 `

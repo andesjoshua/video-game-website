@@ -14,7 +14,7 @@ const [gameData, setGameData] = useState([])
 const [filterSearch, setFilterSearch] = useState(gameData)
 
 
-const API = 'http://localhost:3001/games'
+const API = 'http://localhost:3000/games'
 
 useEffect(() => {
   fetch(API) 
