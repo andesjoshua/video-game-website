@@ -51,7 +51,6 @@ const AddGameForm = ({addGame}) => {
 
     return (
         <FormContainer>
-            <button><NavLink to='/'>Home</NavLink></button>
             <h2>Add your favorite game to our database!</h2> 
             <form onSubmit={handleSubmit}>
                 <input name='title' placeholder='title' value={formData.title} onChange={handleChange}/>
@@ -64,7 +63,7 @@ const AddGameForm = ({addGame}) => {
                 onChange={handleChange}/>
                 <input name='thumbnail'placeholder='thumbnail' value={formData.thumbnail} onChange={handleChange}/>
 
-                <input type='submit' onSubmit={handleSubmit}/>
+                <input type='submit' className='submit' onSubmit={handleSubmit}/>
             </form>
         </FormContainer>
     )
@@ -73,23 +72,19 @@ const AddGameForm = ({addGame}) => {
 export default AddGameForm
 
 const FormContainer = styled.div `
-    
-    button {
-       color: white;
-        padding: 10px 20px;
-        background-color: blueviolet;
-        border-radius: 50px;
-        margin: 5px;
-        display: inline-block;
-        cursor: pointer;
-        font-size: 15px;
-        :hover{
-            z-index: 1;
-            transform: scale(1.25); 
-        }
-            a{
-            text-decoration: none;
-            color: white
-        }
+    * {
+    .submit:hover{
+        background-color: #4CAF50; 
+        color: white;
+        cursor: pointer
+      }
+    width:50%;
+    background-color:darkgray;
+    border: 1px solid white;
+    margin: 25px auto 0;
+    padding: 1em;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    text-align: center;
     }
 `
