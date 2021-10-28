@@ -1,17 +1,18 @@
 body {
-  background-color: #1f3e53;
+  background-color: #186192;
   /* background-color: #17405c; */
 }
 
 .cardStyle {
-  font-size: 14px;
+  font-size: 15px;
   text-align: center;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  padding: 50px;
+  /* margin-bottom: 15px; */
 }
 img {
-  margin: 8px;
-
-  height: 100px;
+  margin: 10px;
+  height: 200px;
+  /* width: 50px; */
 }
