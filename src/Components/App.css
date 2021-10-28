@@ -1,6 +1,5 @@
 body {
   background-color: #186192;
-  /* background-color: #17405c; */
 }
 
 .cardStyle {
@@ -9,10 +8,8 @@ body {
   display: flex;
   flex-wrap: wrap;
   padding: 50px;
-  /* margin-bottom: 15px; */
 }
 img {
   margin: 10px;
   height: 200px;
-  /* width: 50px; */
 }

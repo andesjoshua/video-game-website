@@ -7,7 +7,7 @@ import {Route} from 'react-router-dom'
 import About from './About';
 
 
-// hello
+
 
 function App() {
 const [gameData, setGameData] = useState([])
@@ -39,26 +39,17 @@ const handleSearch = (e) => {
 
   return (
     <div className="App" >
-      {/* <Switch> */}
-
       <Header handleSearch={handleSearch} />
-
-        {/* <Route exact path='/nav'> */}
-        <NavBar gameData={gameData} setGameData={setGameData}/>
-        {/* </Route> */}
-        <Route exact path='/about'>
-          <About />
-        </Route>
-        <Route exact path='/new'>
-            <AddGameForm addGame={addGame}/>
-        </Route>
-
-
-
-        <Route exact path='/'>
-          <GameContainer gameData={filterSearch}/>
-        </Route>
-      {/* </Switch> */}
+      <NavBar gameData={gameData} setGameData={setGameData}/>
+      <Route exact path='/about'>
+        <About />
+      </Route>
+      <Route exact path='/new'>
+        <AddGameForm addGame={addGame}/>
+      </Route>
+      <Route exact path='/'>
+        <GameContainer gameData={filterSearch}/>
+      </Route>
     </div>
   );
 }
