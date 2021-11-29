@@ -14,7 +14,7 @@ const [gameData, setGameData] = useState([])
 const [filterSearch, setFilterSearch] = useState(gameData)
 
 
-const API = 'http://localhost:3000/games'
+const API = 'https://server-for-game-site.herokuapp.com/games'
 
 useEffect(() => {
   fetch(API) 

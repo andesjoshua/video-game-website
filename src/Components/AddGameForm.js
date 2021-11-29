@@ -31,7 +31,7 @@ const AddGameForm = ({addGame}) => {
             short_description: formData.short_description,  
             thumbnail: formData.thumbnail          
        }
-       fetch('http://localhost:3000/games', {
+       fetch('https://server-for-game-site.herokuapp.com/games', {
           method: 'POST',
           headers: {'Content-Type': 'application/json'},
           body: JSON.stringify(newGame)

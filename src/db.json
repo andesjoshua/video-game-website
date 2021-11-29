@@ -4755,6 +4755,17 @@
       "short_description": "FUNTIMES",
       "thumbnail": "https://upload.wikimedia.org/wikipedia/en/4/4b/The_Elder_Scrolls_IV_Oblivion_cover.png",
       "id": 519
+    },
+    {
+      "title": "World of Warcraft",
+      "game_url": "https://worldofwarcraft.com/en-us/",
+      "genre": "MMORPG",
+      "platform": "PC",
+      "developer": "Blizzard",
+      "release_date": "11-23-2004",
+      "short_description": "Set in the fictional world of Azeroth, WoW allows players to create avatar-style characters and explore a sprawling universe while interacting with nonreal players—called nonplayer characters (NPCs)—and other real-world players (PCs).",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/en/thumb/9/91/WoW_Box_Art1.jpg/220px-WoW_Box_Art1.jpg",
+      "id": 520
     }
   ]
 }
